@@ -108,7 +108,7 @@ class BurgerBuilder extends Component{
             disabledinfo[key] = disabledinfo[key]<=0;
         }
 
-        let orderSummary = 'Hello'; 
+        let orderSummary = ''; 
 
         let burger = this.state.error? <p>Ingredients can't be loaded</p> : <Spinner/>;
 
@@ -128,8 +128,7 @@ class BurgerBuilder extends Component{
         ingredients={this.state.ingredients}
         purchasedCancelled={this.purchaseCancelHandler}
         purchaseContinue={this.purchaseContinueHandler}
-        price={this.state.totalPrice}>
-         </OrderSummary>
+        price={this.state.totalPrice} />
         }
 
         if (this.state.loading === true){

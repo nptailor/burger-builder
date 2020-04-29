@@ -5,12 +5,11 @@ class App extends Component {
   state={
     show: true
   }
-
   render(){
     return (
       <div>
         <Layout>
-          {this.state.show ? <BurgerBuilder/> :null}
+        <BurgerBuilder/>
         </Layout>
       </div>
     );
